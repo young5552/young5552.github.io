@@ -1,0 +1,71 @@
+/*
+层叠样式表（Cascading Style Sheet，简称：CSS）
+为网页添加样式的代码，决定怎么显示网页的样式，是一门扬是表达语言
+需要在html文件的<head> 和 </head> 标签之间加入类似语句就能引用
+<link href="styles/style.css" rel="stylesheet">
+*/
+ /*前面的表示要更改样式的元素*/
+html {
+  /* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
+  font-size: 20px;   /*字体大小*/
+  /* Google fonts 输出的 CSS */
+  font-family: 'Open Sans', sans-serif; /*字体设置*/
+  background-color:#4B4343;  /*背景颜色，这个色可以用颜色生成器来制作*/
+}
+ /*h1标题的样式更改*/
+h1 {
+  font-size: 60px;
+  /*text-align: center;*/  /*背景颜色*/
+  margin: 0;      /*外边距大小*/
+  padding: 20px 0;   /*内边距大小*/ 
+  color: #00539F;/*字体颜色*/
+  text-shadow: 3px 3px 1px black;/*阴影设置*/
+}
+/*p和li的样式更改*/
+p, li {
+  font-size: 16px;    
+  line-height: 2;   /*行间距*/
+  letter-spacing: 1px; /*字间间隔*/ 
+}
+body {
+  /*width: 900px;*/  /*宽度*/
+  margin: 0 auto;/*居中*/
+  background-color: #FF9500;
+/*  padding: 0 20px 20px 20px;*/
+/*  border: 50px solid black;*/
+}
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+button { /* 按钮美化 */
+	width: 150px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #db14d2; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+}
+button:hover { /* 鼠标移入按钮范围时改变颜色 */
+    background: #add11e;
+}
+#time {
+	font-size: 60px;
+	/*text-align: center;*/ /*背景颜色*/
+	margin: 0; /*外边距大小*/
+	padding: 20px 0; /*内边距大小*/
+	color: #db14d2; /*字体颜色*/
+	text-shadow: 3px 3px 1px black; /*阴影设置*/
+	-webkit-text-stroke: 1px black;
+	letter-spacing: 0.04em;
+	text-align: center; /*字体居中*/
+}
